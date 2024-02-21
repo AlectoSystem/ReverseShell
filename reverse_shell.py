@@ -11,8 +11,6 @@ def netcat(port):
             command = str(input("# "))
             if len(command) == 0:
                 pass
-            elif command in "^":
-                pass
             else:
                 fd.sendall(bytes(command,"utf-8"))
                 data = fd.recv(1024*10).decode()
