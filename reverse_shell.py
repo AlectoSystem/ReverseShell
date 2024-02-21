@@ -8,7 +8,7 @@ def netcat(port):
         fd,addr = sock.accept()
         print(addr[0],fd.recv(1024).decode())
         while True:
-            command = str(input("# "))
+            command = str(input("Reverse@{addr[0]} ~ # "))
             if len(command) == 0:
                 pass
             else:
